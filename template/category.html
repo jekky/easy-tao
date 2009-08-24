@@ -1,0 +1,101 @@
+{% include "header.html" %}
+
+<div class="listcontent">
+<div class="nav"><a href="./">首页</a> &gt; <a href="category">所有分类</a> 
+</div>
+<!-- 分类 -->
+<div id="DivCategoryList" class="listall">
+<div class="listalltt"><div class="listalltlf"></div><div class="listallrt"></div></div>
+<div class="listallcont">
+<div class="listcnttitle">当前 <span style="color:#FF3300;">{{ item_cats|length }}</span> 类目下共有<span style="color:#0065ff">{{ total_results }}</span>个商品</div>
+<div class="tbmjcont">
+<ul>
+{% for cat in item_cats %}
+<li><a href="category?catid={{ cat.cid }}">{{ cat.name }}</a>
+{% endfor %}
+</ul>
+</div>
+</div>
+<div class="listallbt"><div class="listallblf"></div><div class="listallbrt"></div></div>
+</div>
+<!-- /分类 -->
+
+<!-- 列表 -->
+<div class="liebtt"><div class="lftt"><div class="lfttl">商品信息</div></div><div class="rttt"></div>
+</div><div class="liebline">
+<!-- 分页 -->
+<div class="pager">
+<div class="left">共 {{ total_pages }}页/ {{ taobaoke_items|length }}条信息</div>
+<div class="right">
+<span id="lblPager">
+{{ paging_html }}
+</span>
+</div>
+</div>
+<!--/分页 -->
+</div>
+<!-- 列表内容 -->
+<div class="liebcont">
+<div class="liebcttt">
+<div class="liebcttt01">商品推广信息</div>
+<div class="liebcttt02"><span>单价</span></div>
+<div class="liebcttt03"><span>返点比例</span></div>
+<div class="liebcttt04"><span>返点金额</span></div>
+<div class="liebcttt07"><span>成交总量</span></div>
+<div class="liebcttt05"><span>购买</span></div>
+</div>
+{% for item in taobaoke_items %}
+<div class="liebcp">
+<div class="liebsm01"><a href="goods?nick={{ item.nick }}&id={{ item.id }}&click_url={{ item.click_url }}" target="_blank"><img 
+src="{{ item.pict_url }}" alt="{{ item.title }}" width="80" height="80" /></a></div>
+<div class="liebsm02">
+<div class="picname"><a href="goods?nick={{ item.nick }}&id={{ item.id }}&click_url={{ item.click_url }}"
+target="_blank">{{ item.title }}</a></div>
+<div class="picnmb">掌柜:{{ item.nick }} <a href="shop?nick={{ item.nick }}" target="_blank">&raquo;访问淘宝店铺</a></div>
+</div>
+<div class="liebsm03">{{ item.price }} 元</div>
+<div class="liebsm04"><span>{{ item.commission_rate }} %</span></div>
+<div class="liebsm05"><span>{{ item.commission }}</span> 元</div>
+<div class="liebsm07"><span>{{ item.commission_num }}</span> 件</div>
+<div class="liebsm06"><a href="goods?nick={{ item.nick }}&id={{ item.id }}&click_url={{ item.click_url }}" target="_blank"><img src="http://taoke.alimama.com/images/cps/fgetccode_btn.gif" /></a></div>
+</div>
+{% endfor %}
+</div>
+<!-- /列表内容 -->
+<div class="liebline">
+<!-- 分页 -->
+<div class="pager">
+<div class="left">共 {{ total_pages }} 页/ {{ taobaoke_items|length }}条信息</div>
+<div class="right">
+<span id="lblPager">
+{{ paging_html }}
+</span>
+</div>
+</div>
+<!--/分页 -->
+</div>
+<!-- /列表 -->
+<!-- 赞助商链接 -->
+<div class="googlegg">
+<div class="ng">
+<div class="ngtitle">
+<div class="left"><strong>淘宝客<span>推广</span>联盟</strong></div>
+<div class="right">赞助商链接：<a href="http://www.7895123.com.cn/" target="_blank">免淘网</a> - 帮您淘宝，购物无忧</div>
+</div>
+<div id="ListAdsense">
+<a href="http://shop57088361.taobao.com/" target="_blank">购时尚服饰</a> - <a href="http://www2.im.alisoft.com/webim/tribe/tribeDetail.htm?tribeId=106186486&userId=cntaobao&isSingle=y" target="_blank">虚位以待-赞助商绝佳广告位置</a> - <a href="http://www2.im.alisoft.com/webim/tribe/tribeDetail.htm?tribeId=106186486&userId=cntaobao&isSingle=y" target="_blank">虚位以待-赞助商绝佳广告位置</a> - <a href="http://www2.im.alisoft.com/webim/tribe/tribeDetail.htm?tribeId=106186486&userId=cntaobao&isSingle=y" target="_blank">虚位以待-赞助商绝佳广告位置</a> - <a href="http://www2.im.alisoft.com/webim/tribe/tribeDetail.htm?tribeId=106186486&userId=cntaobao&isSingle=y" target="_blank">虚位以待-赞助商绝佳广告位置</a><br />
+<a href="http://www2.im.alisoft.com/webim/tribe/tribeDetail.htm?tribeId=106186486&userId=cntaobao&isSingle=y" target="_blank">虚位以待-赞助商绝佳广告位置</a> - <a href="http://www2.im.alisoft.com/webim/tribe/tribeDetail.htm?tribeId=106186486&userId=cntaobao&isSingle=y" target="_blank">虚位以待-赞助商绝佳广告位置</a> - <a href="http://www2.im.alisoft.com/webim/tribe/tribeDetail.htm?tribeId=106186486&userId=cntaobao&isSingle=y" target="_blank">虚位以待-赞助商绝佳广告位置</a> - <a href="http://www2.im.alisoft.com/webim/tribe/tribeDetail.htm?tribeId=106186486&userId=cntaobao&isSingle=y" target="_blank">虚位以待-赞助商绝佳广告位置</a> - <a href="http://www2.im.alisoft.com/webim/tribe/tribeDetail.htm?tribeId=106186486&userId=cntaobao&isSingle=y" target="_blank">虚位以待-赞助商绝佳广告位置</a><br />
+<a href="http://www2.im.alisoft.com/webim/tribe/tribeDetail.htm?tribeId=106186486&userId=cntaobao&isSingle=y" target="_blank">虚位以待-赞助商绝佳广告位置</a> - <a href="http://www2.im.alisoft.com/webim/tribe/tribeDetail.htm?tribeId=106186486&userId=cntaobao&isSingle=y" target="_blank">虚位以待-赞助商绝佳广告位置</a> - <a href="http://www2.im.alisoft.com/webim/tribe/tribeDetail.htm?tribeId=106186486&userId=cntaobao&isSingle=y" target="_blank">虚位以待-赞助商绝佳广告位置</a> - <a href="http://www2.im.alisoft.com/webim/tribe/tribeDetail.htm?tribeId=106186486&userId=cntaobao&isSingle=y" target="_blank">虚位以待-赞助商绝佳广告位置</a> - <a href="http://www2.im.alisoft.com/webim/tribe/tribeDetail.htm?tribeId=106186486&userId=cntaobao&isSingle=y" target="_blank">虚位以待-赞助商绝佳广告位置</a><br />
+<a href="http://www2.im.alisoft.com/webim/tribe/tribeDetail.htm?tribeId=106186486&userId=cntaobao&isSingle=y" target="_blank">虚位以待-赞助商绝佳广告位置</a> - <a href="http://www2.im.alisoft.com/webim/tribe/tribeDetail.htm?tribeId=106186486&userId=cntaobao&isSingle=y" target="_blank">虚位以待-赞助商绝佳广告位置</a> - <a href="http://www2.im.alisoft.com/webim/tribe/tribeDetail.htm?tribeId=106186486&userId=cntaobao&isSingle=y" target="_blank">虚位以待-赞助商绝佳广告位置</a> - <a href="http://www2.im.alisoft.com/webim/tribe/tribeDetail.htm?tribeId=106186486&userId=cntaobao&isSingle=y" target="_blank">虚位以待-赞助商绝佳广告位置</a> - <a href="http://www2.im.alisoft.com/webim/tribe/tribeDetail.htm?tribeId=106186486&userId=cntaobao&isSingle=y" target="_blank">虚位以待-赞助商绝佳广告位置</a><br />
+<a href="http://www2.im.alisoft.com/webim/tribe/tribeDetail.htm?tribeId=106186486&userId=cntaobao&isSingle=y" target="_blank">虚位以待-赞助商绝佳广告位置</a> - <a href="http://www2.im.alisoft.com/webim/tribe/tribeDetail.htm?tribeId=106186486&userId=cntaobao&isSingle=y" target="_blank">虚位以待-赞助商绝佳广告位置</a> - <a href="http://www2.im.alisoft.com/webim/tribe/tribeDetail.htm?tribeId=106186486&userId=cntaobao&isSingle=y" target="_blank">虚位以待-赞助商绝佳广告位置</a> - <a href="http://www2.im.alisoft.com/webim/tribe/tribeDetail.htm?tribeId=106186486&userId=cntaobao&isSingle=y" target="_blank">虚位以待-赞助商绝佳广告位置</a> - <a href="http://www2.im.alisoft.com/webim/tribe/tribeDetail.htm?tribeId=106186486&userId=cntaobao&isSingle=y" target="_blank">虚位以待-赞助商绝佳广告位置</a><br />
+<a href="http://www2.im.alisoft.com/webim/tribe/tribeDetail.htm?tribeId=106186486&userId=cntaobao&isSingle=y" target="_blank">虚位以待-赞助商绝佳广告位置</a> - <a href="http://www2.im.alisoft.com/webim/tribe/tribeDetail.htm?tribeId=106186486&userId=cntaobao&isSingle=y" target="_blank">虚位以待-赞助商绝佳广告位置</a> - <a href="http://www2.im.alisoft.com/webim/tribe/tribeDetail.htm?tribeId=106186486&userId=cntaobao&isSingle=y" target="_blank">虚位以待-赞助商绝佳广告位置</a> - <a href="http://www2.im.alisoft.com/webim/tribe/tribeDetail.htm?tribeId=106186486&userId=cntaobao&isSingle=y" target="_blank">虚位以待-赞助商绝佳广告位置</a> - <a href="http://www2.im.alisoft.com/webim/tribe/tribeDetail.htm?tribeId=106186486&userId=cntaobao&isSingle=y" target="_blank">虚位以待-赞助商绝佳广告位置</a><br />
+</div>
+</div>
+</div>
+<!-- /赞助商链接 -->
+</div>
+
+{% include "footer.html" %}
+
+</body>
+</html>

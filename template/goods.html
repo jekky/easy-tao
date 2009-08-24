@@ -1,0 +1,68 @@
+{% include "header.html" %}
+<div class="listcontent">
+<div class="nav"><a href="./">首页</a> &gt; <a href="category">所有分类</a>
+{% for cat in item_cats %}
+&gt; <a href="category?catid={{ cat.cid }}">{{ cat.name }}</a>
+{% endfor %}
+</div>
+</div>
+<!-- 分类 -->
+<div id="DivCategoryList" class="listall">
+<div class="listalltt"><div class="listalltlf"></div><div class="listallrt"></div></div>
+<div class="listallcont">
+<h2>{{ title }}</h2>
+</div>
+<div class="listallbt"><div class="listallblf"></div><div class="listallbrt"></div></div>
+</div>
+<!-- /分类 -->
+
+<div class="liebtt"><div class="lftt"><div class="lfttl">商品信息</div></div><div class="rttt"></div>
+</div><div>
+<!-- 分页 -->
+<div class="pager">
+<div class="left"><a title="{{ title }}" href="goodsurl?aid={{ iid }}" target="_blank"><img alt="{{ title }}" src="{{ pic_path }}"  border="0" width="310" /></a>
+<span id="lblPager">
+<ul>
+<li>商品标题：{{ title }}</li>
+<li>商品数量：{{ num }}</li>
+<li>卖家昵称：{{ nick }}</li>
+<li>商品价格：{{ price }}元</li>
+<li>商品id：{{ iid }}</li>
+</ul>
+</span>
+<br /><div align="center"><a href="{{ click_url }}" title="{{ title }}" target="_blank"><img border="0" src="img/cpasubmit.gif" alt="淘宝网购买链接" /></a></div>
+</div>
+</div>
+
+<div class="right">
+{{ desc }}
+</div>
+
+<!--/分页 -->
+</div>
+
+<br /><div align="center"><a href="{{ click_url }}" title="{{ title }}" target="_blank"><img src="img/cpasubmit.gif" alt="淘宝网购买链接" /></a></div>
+
+<!-- 赞助商链接 -->
+<div class="googlegg">
+<div class="ng">
+<div class="ngtitle">
+<div class="left"><strong>淘宝客<span>推广</span>联盟</strong></div>
+<div class="right">赞助商链接：<a href="http://www.7895123.com.cn/" target="_blank">免淘网</a> - 帮您淘宝，购物无忧</div>
+</div>
+<div id="ListAdsense">
+<a href="http://shop57088361.taobao.com/" target="_blank">购时尚服饰</a> - <a href="http://www2.im.alisoft.com/webim/tribe/tribeDetail.htm?tribeId=106186486&userId=cntaobao&isSingle=y" target="_blank">虚位以待-赞助商绝佳广告位置</a> - <a href="http://www2.im.alisoft.com/webim/tribe/tribeDetail.htm?tribeId=106186486&userId=cntaobao&isSingle=y" target="_blank">虚位以待-赞助商绝佳广告位置</a> - <a href="http://www2.im.alisoft.com/webim/tribe/tribeDetail.htm?tribeId=106186486&userId=cntaobao&isSingle=y" target="_blank">虚位以待-赞助商绝佳广告位置</a> - <a href="http://www2.im.alisoft.com/webim/tribe/tribeDetail.htm?tribeId=106186486&userId=cntaobao&isSingle=y" target="_blank">虚位以待-赞助商绝佳广告位置</a><br />
+<a href="http://www2.im.alisoft.com/webim/tribe/tribeDetail.htm?tribeId=106186486&userId=cntaobao&isSingle=y" target="_blank">虚位以待-赞助商绝佳广告位置</a> - <a href="http://www2.im.alisoft.com/webim/tribe/tribeDetail.htm?tribeId=106186486&userId=cntaobao&isSingle=y" target="_blank">虚位以待-赞助商绝佳广告位置</a> - <a href="http://www2.im.alisoft.com/webim/tribe/tribeDetail.htm?tribeId=106186486&userId=cntaobao&isSingle=y" target="_blank">虚位以待-赞助商绝佳广告位置</a> - <a href="http://www2.im.alisoft.com/webim/tribe/tribeDetail.htm?tribeId=106186486&userId=cntaobao&isSingle=y" target="_blank">虚位以待-赞助商绝佳广告位置</a> - <a href="http://www2.im.alisoft.com/webim/tribe/tribeDetail.htm?tribeId=106186486&userId=cntaobao&isSingle=y" target="_blank">虚位以待-赞助商绝佳广告位置</a><br />
+<a href="http://www2.im.alisoft.com/webim/tribe/tribeDetail.htm?tribeId=106186486&userId=cntaobao&isSingle=y" target="_blank">虚位以待-赞助商绝佳广告位置</a> - <a href="http://www2.im.alisoft.com/webim/tribe/tribeDetail.htm?tribeId=106186486&userId=cntaobao&isSingle=y" target="_blank">虚位以待-赞助商绝佳广告位置</a> - <a href="http://www2.im.alisoft.com/webim/tribe/tribeDetail.htm?tribeId=106186486&userId=cntaobao&isSingle=y" target="_blank">虚位以待-赞助商绝佳广告位置</a> - <a href="http://www2.im.alisoft.com/webim/tribe/tribeDetail.htm?tribeId=106186486&userId=cntaobao&isSingle=y" target="_blank">虚位以待-赞助商绝佳广告位置</a> - <a href="http://www2.im.alisoft.com/webim/tribe/tribeDetail.htm?tribeId=106186486&userId=cntaobao&isSingle=y" target="_blank">虚位以待-赞助商绝佳广告位置</a><br />
+<a href="http://www2.im.alisoft.com/webim/tribe/tribeDetail.htm?tribeId=106186486&userId=cntaobao&isSingle=y" target="_blank">虚位以待-赞助商绝佳广告位置</a> - <a href="http://www2.im.alisoft.com/webim/tribe/tribeDetail.htm?tribeId=106186486&userId=cntaobao&isSingle=y" target="_blank">虚位以待-赞助商绝佳广告位置</a> - <a href="http://www2.im.alisoft.com/webim/tribe/tribeDetail.htm?tribeId=106186486&userId=cntaobao&isSingle=y" target="_blank">虚位以待-赞助商绝佳广告位置</a> - <a href="http://www2.im.alisoft.com/webim/tribe/tribeDetail.htm?tribeId=106186486&userId=cntaobao&isSingle=y" target="_blank">虚位以待-赞助商绝佳广告位置</a> - <a href="http://www2.im.alisoft.com/webim/tribe/tribeDetail.htm?tribeId=106186486&userId=cntaobao&isSingle=y" target="_blank">虚位以待-赞助商绝佳广告位置</a><br />
+<a href="http://www2.im.alisoft.com/webim/tribe/tribeDetail.htm?tribeId=106186486&userId=cntaobao&isSingle=y" target="_blank">虚位以待-赞助商绝佳广告位置</a> - <a href="http://www2.im.alisoft.com/webim/tribe/tribeDetail.htm?tribeId=106186486&userId=cntaobao&isSingle=y" target="_blank">虚位以待-赞助商绝佳广告位置</a> - <a href="http://www2.im.alisoft.com/webim/tribe/tribeDetail.htm?tribeId=106186486&userId=cntaobao&isSingle=y" target="_blank">虚位以待-赞助商绝佳广告位置</a> - <a href="http://www2.im.alisoft.com/webim/tribe/tribeDetail.htm?tribeId=106186486&userId=cntaobao&isSingle=y" target="_blank">虚位以待-赞助商绝佳广告位置</a> - <a href="http://www2.im.alisoft.com/webim/tribe/tribeDetail.htm?tribeId=106186486&userId=cntaobao&isSingle=y" target="_blank">虚位以待-赞助商绝佳广告位置</a><br />
+<a href="http://www2.im.alisoft.com/webim/tribe/tribeDetail.htm?tribeId=106186486&userId=cntaobao&isSingle=y" target="_blank">虚位以待-赞助商绝佳广告位置</a> - <a href="http://www2.im.alisoft.com/webim/tribe/tribeDetail.htm?tribeId=106186486&userId=cntaobao&isSingle=y" target="_blank">虚位以待-赞助商绝佳广告位置</a> - <a href="http://www2.im.alisoft.com/webim/tribe/tribeDetail.htm?tribeId=106186486&userId=cntaobao&isSingle=y" target="_blank">虚位以待-赞助商绝佳广告位置</a> - <a href="http://www2.im.alisoft.com/webim/tribe/tribeDetail.htm?tribeId=106186486&userId=cntaobao&isSingle=y" target="_blank">虚位以待-赞助商绝佳广告位置</a> - <a href="http://www2.im.alisoft.com/webim/tribe/tribeDetail.htm?tribeId=106186486&userId=cntaobao&isSingle=y" target="_blank">虚位以待-赞助商绝佳广告位置</a><br />
+</div>
+</div>
+</div>
+<!-- /赞助商链接 -->
+</div>
+
+{% include "footer.html" %}
+</body>
+</html>

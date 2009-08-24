@@ -1,0 +1,80 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{ font-family: Tahoma,"",sans-serif; font-size:12px; background:#fff; color:#333; text-align:center; margin:0; padding:0;}
+.header a{ text-decoration: none; color:#16387c;}
+.header a:hover { text-decoration: underline; color:#FA6606;}
+.header img{border:none;}
+.header form{margin:0; padding:0;}
+.header .left { float:left;}
+.header .right { float:right;}
+.header .headtopuser .right a{ color:#16387c;}
+.header .headtopuser .chright a{ color:#16387c;}
+.header .allad { margin:8px auto;}
+.header .red { color:#FF0000;}
+.header select{font-size:12px; font-family:Tahoma, "", sans-serif;}
+
+.header{width:980px; overflow:hidden; margin:auto;}
+.header .headtop{width:100%; overflow:hidden; padding:5px 0 0;}
+.header .headlogo{padding:0 0 5px; float:left;}
+.header .headright{width:790px; float:right;}
+.header .headtopuser{height:30px; overflow:hidden;}
+.header .headtopuser .left{padding:5px 0 0;}
+
+.header .hsch{background:#f89a33 url(../images/v4_head_bg.gif); color:#fff;}
+.header .hsch1{background:url(../images/v4_head_l.gif) left no-repeat;}
+.header .hsch2{background:url(../images/v4_head_r.gif) right no-repeat; height:49px; overflow:hidden; padding:0 10px;}
+.header .hsadleft{width:50px; overflow:hidden; float:left; text-align:left;}
+.header .listshowp{ background:#fff; color:505050; padding:0 1px; font-size:12px; font-family: Tahoma,"",sans-serif; }
+.header .schinshow{ background:#fff; color:505050; padding:0 1px; font-size:12px; font-family: Tahoma,"",sans-serif; }
+.header .schinfosearch{float:left; padding:5px 0 0;}
+.header .schinfobtn{float:left; padding:11px 0 0 3px;}
+.header .schinfobr{float:left; line-height:49px; padding:0 0 0 20px;}
+.header .schinfobr a{color:#fff;}
+
+.header .sm{border:1px #eee solid; background:#fff; padding:1px;}
+.header .smbg{background:url(../images/v4_m_bg.gif); height:27px; line-height:27px; padding:0 8px; color:#666;}
+.header .sm a{ color:#16387c;}
+
+.header .chlink{width:100%; overflow:hidden; position:relative; bottom:-5px;}
+.header .chtab1{float:left; margin:0 3px 0 0; background:#f89b34 url(../images/v4_ch1.gif) top left no-repeat; color:#fff; font-weight:bold; cursor:pointer;}
+.header .chtab1 span{display:block; height:32px; line-height:30px; background:url(../images/v4_ch1.gif) bottom right no-repeat; filter:DropShadow(Color=#000000, OffX=1, OffY=1, Positive=true);}
+.header .chtab1 a{color:#fff;}
+.header .chtab1 a:hover{color:#fff;}
+
+.header .chtab2{float:left; margin:0 3px 0 0; background:#fbe8bc url(../images/v4_ch2.gif) top left no-repeat; color:#124074; cursor:pointer;}
+.header .chtab2 span{display:block; height:30px; line-height:30px; background:url(../images/v4_ch2.gif) bottom right no-repeat; filter:DropShadow(Color=#ffffff, OffX=1, OffY=1, Positive=true); }
+.header .chtab2 a{color:#555;}
+.header .chtab2 a:hover{color:#124074;}
+
+.header .chright{float:right; padding:10px 0 0 0; color:#999;}
+.header .chlink .chright a{ color:#16387c;}
+
+.header .listtype{ margin:10px 5px 0 0; float:left; text-align:left; padding:5px 5px 0 5px;}
+.header .schinfosearch{ width:320px; margin:10px 0 0;}
+
+.header .listshowbg{ width:320px; position:relative; left:0; top:10px; z-index:200; color:#000; display:none;}
+.header .listshowbg .listshowtop{ width:320px; height:5px; overflow:hidden;}
+.header .listshowbg .listshowtop .listshowlf{ float:left; width:5px; height:5px; background:url(../images/listshowbg.gif) 0 0 no-repeat;}
+.header .listshowbg .listshowtop .listtopcc{ float:left; width:310px; height:5px; background:url(../images/listshowbg.gif) 0 -5px repeat-x;}
+.header .listshowbg .listshowtop .listshowrt{ float:right; width:5px; background:url(../images/listshowbg.gif) 0 -10px no-repeat; height:5px;}
+
+.header .listshowbg .listshowbottom{ width:320px; height:5px; overflow:hidden;}
+.header .listshowbg .listshowbottom .listbottomlf{float:left; width:5px; height:5px; background:url(../images/listshowbg.gif) 0 -15px no-repeat;}
+.header .listshowbg .listshowbottom .listbottomcc{ float:left; width:310px; height:5px; background:url(../images/listshowbg.gif) 0 -20px repeat-x;}
+.header .listshowbg .listshowbottom .listbottomrt{ float:right; width:5px; background:url(../images/listshowbg.gif) 0 -25px no-repeat; height:5px;}
+
+.header .listshowbg .listcnt{ width:309px; background:#fffde8; border-left: solid 1px #ffa851; border-right: solid 1px #ffa851; padding:5px;}
+.header .listshowbg .listcnt ul{ margin:0 0 0 5px; float:left; width:95px; line-height:18px; color:#666;}
+
+.footer{ width:980px; margin:15px auto auto; border-top:solid 1px #ccc; line-height:20px;}
+.footer .footlink{ height:22px; margin:10px 0 0;}
+.footer .footlink a{ color:#666; text-decoration:none;}
+.footer .footcopy{ font-family:Arial, Helvetica, sans-serif;}
+.footer .footicpc a{ color:#0066CC; text-decoration:none;}
+
+.menu { BORDER: #49acd6 1px solid; BACKGROUND: #fff; POSITION:absolute; z-index:99999;}
+.menu TD { PADDING:0px; BACKGROUND: #e0f0f9; MARGIN: 0px; text-align:left;}
+.f_one { BACKGROUND: #ffffff;}
+.menu A { PADDING:3px 15px; DISPLAY: block;}
+.menu A:hover { BACKGROUND: #2f5fa1; COLOR: #fff; TEXT-DECORATION: none;}

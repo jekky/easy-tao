@@ -1,0 +1,15 @@
+application: easy-tao
+version: 1
+runtime: python
+api_version: 1
+
+handlers:
+- url: /style
+  static_dir: style
+- url: /img
+  static_dir: img
+- url: /js
+  static_dir: js
+  
+- url: /.*
+  script: main.py

@@ -1,0 +1,272 @@
+body,ul,li,div
+{
+	margin:0;
+	padding:0;
+	border:0;
+	font-size:12px;
+}
+.Tabs
+{
+	width:960px; 
+	overflow:hidden;
+	
+}
+.Tabs ul
+{
+	width:510px;
+	height:26px;
+	clear:both;
+	background:url(../images/tab_bg.gif);
+}
+.Tabs li
+{
+	width:84px;
+	float:left;
+	height:20px;
+	padding:6px 0 0 0;
+	background:url(../img/) no-repeat 0 -220px;
+	text-align:center;
+	color:#366401;
+	list-style-type: none;
+}
+.Tabs li more
+{
+	width:84px;
+	float:left;
+	height:20px;
+	padding:6px 0 0 0;
+	text-align:center;
+	color:#366401;
+	list-style-type: none;
+}
+.Tabs .TabsClick
+{
+	background:url(../images/tab_02bg.gif) no-repeat right ; 
+	text-align:center; 
+	color:#366401; 
+	font-weight:bold; 
+	cursor:pointer;
+}
+.Cont
+{
+	padding:6px 5px 0 10px;
+}
+.Cont ul
+{
+	clear:both;
+}
+.Cont li
+{
+	folat:left;
+	text-align:left; 
+	line-height:20px;
+	list-style-type: none;
+
+}
+
+
+
+/*产品选项卡 */
+
+.pro_Tabs
+{
+	width:272px; 
+	overflow:hidden;
+
+	
+}
+.pro_Tabs ul
+{	
+	margin-left:135px;
+	width:272px;
+}
+.pro_Tabs li
+{   
+	width:44px;
+	float:left;
+	height:18px;
+	margin-top:7px;
+	padding:3px 0 0 0;
+	background:url(../images/cptj_green.gif) no-repeat right;
+	text-align:center;
+	color:#ffffff;
+	list-style-type: none;
+}
+
+.pro_Tabs .TabsClick
+{
+	background:url(../images/cptj_blank.gif) no-repeat right ; 
+	text-align:center; 
+	color:#366401; 
+	font-weight:bold; 
+	cursor:pointer;
+}
+
+/*时尚流行产品选项卡 */
+
+.pross_Tabs
+{
+	width:272px; 
+	overflow:hidden;
+
+	
+}
+.pross_Tabs ul
+{	
+	margin-left:90px;
+	width:272px;
+}
+.pross_Tabs li
+{   
+	width:44px;
+	float:left;
+	height:18px;
+	margin-top:7px;
+	padding:3px 0 0 0;
+	background:url(../images/mrhz_fen.gif) no-repeat right;
+	text-align:center;
+	color:#ffffff;
+	list-style-type: none;
+}
+
+.pross_Tabs .TabsClick
+{
+	background:url(../images/mrhz_blank.gif) no-repeat right ; 
+	text-align:center; 
+	color:#FF6491; 
+	font-weight:bold; 
+	cursor:pointer;
+}
+
+/*数码选项卡 */
+
+.sm_pro_Tabs
+{
+	width:272px; 
+	overflow:hidden;
+}
+.sm_pro_Tabs ul
+{	
+	margin-left:90px;
+	width:272px;
+}
+.sm_pro_Tabs li
+{   
+	width:44px;
+	float:left;
+	height:18px;
+	margin-top:7px;
+	padding:3px 0 0 0;
+	background:url(../images/cptj_sm_blue.gif) no-repeat right;
+	text-align:center;
+	color:#ffffff;
+	list-style-type: none;
+}
+
+.sm_pro_Tabs .TabsClick
+{
+	background:url(../images/cptj_sm_blank.gif) no-repeat right ; 
+	text-align:center; 
+	color:#2C619D; 
+	font-weight:bold; 
+	cursor:pointer;
+}
+
+/*服装选项卡 */
+
+.fz_pro_Tabs
+{
+	width:272px; 
+	overflow:hidden;
+
+	
+}
+.fz_pro_Tabs ul
+{	
+	margin-left:135px;
+	width:272px;
+}
+.fz_pro_Tabs li
+{   
+	width:44px;
+	float:left;
+	height:18px;
+	margin-top:7px;
+	padding:3px 0 0 0;
+	background:url(../images/cptj_fz_orange.gif) no-repeat right;
+	text-align:center;
+	color:#ffffff;
+	list-style-type: none;
+}
+
+.fz_pro_Tabs .TabsClick
+{
+	background:url(../images/cptj_fz_blank.gif) no-repeat right ; 
+	text-align:center; 
+	color:#F3711E; 
+	font-weight:bold; 
+	cursor:pointer;
+}
+
+
+/*便民生活 */
+#ar_smlxcp {
+	height: 234px;
+	width: 218px;
+	background-image: url(../img/bianmin.jpg);
+	background-repeat: no-repeat;
+}
+#ar_smlxcp_dh {height: 26px;padding-top:2px;}
+
+.sm_pro_Tabs
+{
+	width:218px; 
+
+	
+}
+.sm_pro_Tabs ul
+{	
+	margin-left:2px;
+	width:218x;
+}
+.sm_pro_Tabs li
+{   
+	width:54px;
+	float:left;
+	height:23px;
+	margin-top:7px;
+	padding:3px 0 0 0;
+	background:url(../img/yy_k01.gif) no-repeat right;
+	text-align:center;
+	color:#333333;
+	list-style-type: none;
+}
+
+.sm_pro_Tabs .TabsClick
+{	
+	background:url(../img/yy_k02.gif) no-repeat right ; 
+	text-align:center; 
+	color:#FC8B22;
+	cursor:pointer;
+	font-weight:normal;
+}
+#cparti_main {
+   margin:0px 2px 3px 3px;
+　　width:212px;
+	height:194px;
+	background-repeat: no-repeat;
+	background-color:#Ffffff;
+}
+
+#cparti_main ul {
+	margin-top: 10px;
+	margin-left:3px;
+}
+#pro_list ul{margin: 7px 0px 0px 3px;list-style:none;color:#999999;}
+#pro_list li{width:200px;float:left;}
+.pro_list_p{width:60px; height:65px;border:1px solid #CCCCCC; float:left; margin:0; padding:0; }
+.pro_list_t{width:140px; margin-right:4px; float:right; margin:0; padding:0; }
+.pro_list_t_1{width:144px; margin-right:4px; float:left; margin:0; padding:0; }
+.pro_list_l{width:200px; height:1px; margin:4px 0 4px 0; border-bottom:1px dashed #CCCCCC; float:left; overflow:hidden;float:left;}
+#pro_list a{color: #474747;text-decoration:none;}
+#pro_list a:hover {color: #107A05;}
